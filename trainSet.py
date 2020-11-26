@@ -3,16 +3,16 @@ import os
 import jsonParser
 import requests
 from time import sleep 
-fp = open("trainingDataset.text","a")
+fp = open("trainingSet/trainingDataset.text","a")
 
 threat = []
 not_threat = []
 pcap_command = 'python3 fatt/fatt.py -r fatt/testbed.pcap -j'
 fatt = os.system(pcap_command)
-if fatt == 1:
+'''if fatt == 1:
 	print("command didn't execute successfully")
 	exit(1)
-sleep(10)
+sleep(10)'''
 # requests setup
 requests.urllib3.disable_warnings()
 client =  requests.session()
