@@ -11,7 +11,7 @@ if fatt == 1:
 sleep(4)'''
 s = 0
 hashes = jsonParser.jsonParser('fatt/fatt.log')
-fp = open("trainingDataset.text","r")
+fp = open("trainingSet/trainingDataset.text","r")
 lines = fp.readlines()
 lines.pop(-1)
 for line in lines:
